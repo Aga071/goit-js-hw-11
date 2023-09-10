@@ -18,9 +18,10 @@ searchForm.addEventListener('submit', e => {
   loadMoreBtn.classList.add('is-hiden');
   page = 1;
 
-  // if (page === 1) {
-  //   contenerGallery.innerHTML = '';
-  // }
+  if (page === 1) {
+    photos.splice(0, photos.length);
+    contenerGallery.innerHTML = '';
+  }
 
   // if (contenerGallery.children.length !== 0) {
   //   const arrayDiv = contenerGallery.children;
